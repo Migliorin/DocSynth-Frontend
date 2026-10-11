@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+
+:root { font-family: Geist, Inter, system-ui, sans-serif; color: #191c1d; background: #f8f9fa; font-synthesis: none; }
+body { margin: 0; }
+a { color: #0051d5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.auth-page { min-height: 100vh; display: flex; flex-direction: column; }
+.auth-header { height: 64px; padding: 0 clamp(24px, 6vw, 80px); display: flex; align-items: center; justify-content: space-between; background: rgb(255 255 255 / 86%); box-shadow: 0 1px 8px #0000000a; }
+.brand { color: #091426; font-weight: 600; font-size: 18px; letter-spacing: -.03em; }
+.header-action { display: flex; align-items: center; gap: 20px; color: #45474c; font-size: 13px; }
+.header-action a { font-weight: 500; }
+.auth-main { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 48px 20px; overflow: hidden; background: radial-gradient(ellipse 480px 260px at 50% 0%, #dbe1ff70, transparent 75%), radial-gradient(ellipse 260px 260px at 95% 55%, #85f8c425, transparent 75%); }
+.auth-card { width: min(100%, 480px); box-sizing: border-box; padding: 38px 40px; background: #fff; border-radius: 9px; box-shadow: 0 12px 32px #09142613; }
+.auth-card--register { width: min(100%, 448px); padding: 30px 32px; border: 1px solid #e7e8e9; }
+.eyebrow { width: fit-content; margin: 0 auto 12px; padding: 5px 10px; border-radius: 20px; background: #edeeef; color: #45474c; font-size: 10px; letter-spacing: .07em; }
+.auth-card h1 { margin: 0 0 8px; color: #091426; font-size: 24px; line-height: 1.3; letter-spacing: -.025em; }
+.auth-card--register h1, .auth-card--register .intro { text-align: center; }
+.intro { margin: 0 0 26px; color: #65676c; font-size: 13px; line-height: 1.65; }
+.auth-card form { display: flex; flex-direction: column; gap: 18px; }
+.auth-card form > label:not(.check-label) { display: flex; flex-direction: column; gap: 7px; color: #091426; font-size: 12px; font-weight: 500; }
+.auth-card label b { color: #ba1a1a; }
+.auth-card input:not([type=checkbox]) { width: 100%; height: 43px; box-sizing: border-box; padding: 0 13px; border: 1px solid #e1e3e4; border-radius: 6px; background: #fff; color: #191c1d; font: inherit; font-size: 14px; outline: none; }
+.auth-card--register input:not([type=checkbox]) { background: #f3f4f5; }
+.auth-card input:focus { border-color: #1e293b; box-shadow: 0 0 0 2px #1e293b1c; }
+.auth-card input::placeholder { color: #9b9da2; }
+.password-field { position: relative; }
+.password-field input { padding-right: 44px !important; }
+.password-field button { position: absolute; top: 0; right: 8px; height: 43px; border: 0; color: #75777d; background: transparent; cursor: pointer; font-size: 16px; }
+.auth-card small { color: #75777d; font-size: 11px; font-weight: 400; }
+.form-options { display: flex; justify-content: space-between; align-items: center; color: #75777d; font-size: 11px; }
+.check-label { display: flex; align-items: center; gap: 8px; color: #65676c; font-size: 12px; cursor: pointer; }
+.check-label input { width: 16px; height: 16px; accent-color: #091426; }
+.terms { align-items: flex-start; line-height: 1.6; }
+.terms input { flex: 0 0 auto; }
+.submit-button { width: 100%; height: 44px; margin-top: 2px; border: 0; border-radius: 6px; background: #091426; color: #fff; font: inherit; font-size: 14px; font-weight: 500; cursor: pointer; box-shadow: 0 3px 8px #09142620; }
+.submit-button:hover { background: #1e293b; }
+.submit-button:disabled { opacity: .65; cursor: wait; }
+.error-message { margin: -5px 0; color: #ba1a1a; font-size: 12px; }
+.inline-login { margin: 4px 0 0; text-align: center; color: #65676c; font-size: 12px; }
+.inline-login a { font-weight: 600; }
+.secure-footer { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 20px; color: #65676c; font-size: 10px; text-align: center; }
+.secure-footer small { color: #75777d; font-size: 10px; }
+.site-footer { min-height: 60px; box-sizing: border-box; padding: 18px clamp(24px, 6vw, 80px); display: flex; justify-content: space-between; align-items: center; gap: 12px; background: #f3f4f5; color: #75777d; font-size: 10px; }
+.prototype, .prototype__frame { width: 100%; min-height: 100vh; }
+.prototype__frame { display: block; border: 0; }
+@media (max-width: 540px) { .auth-header { padding: 0 20px; } .header-action { gap: 8px; font-size: 11px; } .auth-card, .auth-card--register { padding: 28px 22px; } .site-footer { flex-direction: column; justify-content: center; } }
