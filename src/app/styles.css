@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Geist, Inter, system-ui, sans-serif; color: #191c1d; background: #f8f9fa; font-synthesis: none; }
+body { margin: 0; }
+a { color: #0051d5; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid #0051d5;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
